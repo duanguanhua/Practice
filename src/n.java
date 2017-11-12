@@ -10,7 +10,6 @@ public class n {
         BigInteger equal = function(integer);
         System.out.println(" = " + equal);
         System.out.println("the length = " + equal.bitLength());
-        System.out.println("the length = " + equal.bitLength());
     }
 
     public static BigInteger function(BigInteger i) {
