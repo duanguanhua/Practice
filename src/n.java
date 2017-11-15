@@ -22,7 +22,7 @@ public class n {
             System.out.println("1");
             return one;
         } else {
-            //System.out.printf("* 测试");
+            System.out.printf("* 测试");
             return i.multiply(function(i.subtract(one)));
         }
     }
