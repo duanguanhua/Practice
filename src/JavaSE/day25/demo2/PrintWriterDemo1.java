@@ -12,14 +12,14 @@ import java.io.PrintWriter;
  *   写入数据目的 PrintWriter+println 自动刷新
  */
 public class PrintWriterDemo1 {
-	public static void main(String[] args) throws IOException{
-		BufferedReader bfr = new BufferedReader(new FileReader("c:\\a.txt"));
-		PrintWriter pw = new PrintWriter(new FileWriter("d:\\a.txt"),true);
-		String line = null;
-		while((line = bfr.readLine())!=null){
-			pw.println(line);
-		}
-		pw.close();
-		bfr.close();
-	}
+    public static void main(String[] args) throws IOException {
+        BufferedReader bfr = new BufferedReader(new FileReader("c:\\a.txt"));
+        PrintWriter pw = new PrintWriter(new FileWriter("d:\\a.txt"), true);
+        String line = null;
+        while ((line = bfr.readLine()) != null) {
+            pw.println(line);
+        }
+        pw.close();
+        bfr.close();
+    }
 }

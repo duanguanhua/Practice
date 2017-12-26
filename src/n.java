@@ -6,10 +6,11 @@ import java.math.BigInteger;
  */
 public class n {
     public static void main(String[] args) {
-        BigInteger integer = new BigInteger("2000");
+        BigInteger integer = new BigInteger("100");
         BigInteger equal = function(integer);
-        System.out.println(" = " + equal);
+        System.out.println(integer + "! = " + equal);
         System.out.println("the length = " + equal.bitLength());
+        System.out.println("");
     }
 
     public static BigInteger function(BigInteger i) {
@@ -19,10 +20,9 @@ public class n {
             System.out.println("The number is min 0");
             return zero;
         } else if (i.compareTo(zero) == 0) {
-            System.out.println("1");
+            //System.out.println("1");
             return one;
         } else {
-            System.out.printf("* 测试");
             return i.multiply(function(i.subtract(one)));
         }
     }
