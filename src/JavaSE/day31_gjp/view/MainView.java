@@ -1,9 +1,9 @@
 package JavaSE.day31_gjp.view;
-/*
- *  试图层,用户看到和操作的界面
- *  数据传递给controller层实现
- *  成员位置,创建controller对象
- */
+        /*
+         *  试图层,用户看到和操作的界面
+         *  数据传递给controller层实现
+         *  成员位置,创建controller对象
+         */
 
 import java.util.List;
 import java.util.Scanner;
@@ -22,8 +22,7 @@ public class MainView {
     public void run() {
         //创建Scanner类对象,反复键盘输入
         Scanner sc = new Scanner(System.in);
-        boolean flag = true;
-        while (flag) {
+        while (true) {
             System.out.println("---------------管家婆家庭记账软件---------------");
             System.out.println("1.添加账务　2.编辑账务　3.删除账务　4.查询账务　5.退出系统");
             System.out.println("请输入要操作的功能序号[1-5]:");
@@ -48,10 +47,8 @@ public class MainView {
                     selectZhangWu();
                     break;
                 case 5:
-                    flag = false;
+                    System.exit(0);
                     break;
-                default:
-                    System.out.println("输入错误");
             }
         }
     }
